@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         }
         switch_test_page.setOnClickListener {
             startActivity(Intent(this,TestActivity::class.java))
-
+            finish()
         }
     }
 }
