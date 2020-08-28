@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/backgroundcolor"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="?attr/cardbackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+        <TextView
+            android:textStyle="bold"
+            android:text="card_title"
+            android:textColor="?attr/textcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/textcolor"
+            android:text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum amet delectus vel ut expedita debitis doloribus voluptas. Repudiandae illum excepturi rerum consequuntur quisquam cum molestias voluptatibus reiciendis? Est, reiciendis id."
+            android:layout_marginTop="8dp"
+            />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="?attr/cardbackground"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="?attr/textcolor"
+            android:text="Some Compenta"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="?attr/textcolor"
+            android:text="choose me"
+            android:buttonTint="?attr/tintcolor" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="checkbox"
+            android:textColor="?attr/textcolor"
+            android:buttonTint="?attr/tintcolor"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button"
+            android:background="?attr/buttoncolor"
+            />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="?attr/cardbackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_margin="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="?attr/textcolor"
+            android:text="啟用深色模式"
+            />
+        <Switch
+            android:id="@+id/myswitch"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="深色模式"
+            android:textColor="?attr/textcolor"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="換頁"
+        android:layout_margin="20dp"
+        android:id="@+id/switch_test_page"
+        />
+</LinearLayout>
